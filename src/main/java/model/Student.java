@@ -1,4 +1,4 @@
-package dto;
+package model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -22,5 +22,13 @@ public class Student {
     @JsonProperty
     public int getAge() {
         return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
