@@ -11,6 +11,7 @@ public class StudentMapper implements RowMapper<Student> {
     @Override
     public Student map(ResultSet rs, StatementContext ctx) throws SQLException {
         Student student = new Student();
+        student.setId(rs.getInt("id"));
         student.setName(rs.getString("student_name"));
         student.setAge(rs.getInt("age"));
         return student;
